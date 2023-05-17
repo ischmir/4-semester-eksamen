@@ -110,12 +110,13 @@ header .header-right .hamburger div {
     .nav-bar {
         position: absolute;
         top: 80px;
-        height: 450px;
+        height: 0;
         left: 0;
         right: 0;
         width: 100vw;
         background: #B8B560;
         transition: 0.2s;
+        overflow: hidden;
     }
 
     .nav-bar ul {
@@ -124,5 +125,11 @@ header .header-right .hamburger div {
         margin: 80px auto 0 auto;
         text-align: center;
         transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        color: #ffffff;
     }
 }
