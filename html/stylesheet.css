@@ -1,143 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-
-
-body{
-    background: #D1CFA6;
-  }
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins";
 }
 
-/* custom scroll bar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-::selection{
-  background: rgb(0,123,255,0.3);
-}
-.content{
-  max-width: 1250px;
-  margin: auto;
-  padding: 0 30px;
-}
-.navbar{
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-  padding: 25px 0;
-  transition: all 0.3s ease;
-}
-.navbar.sticky{
-  background: #1b1b1b;
-  padding: 10px 0;
-  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
-}
-.navbar .content{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar .logo a{
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.navbar .menu-list{
-  display: inline-flex;
-}
-.menu-list li{
-  list-style: none;
-}
-.menu-list li a{
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 25px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-.menu-list li a:hover{
-  color: #3E4339;
+body {
+    background-color: #D1CFA6;
 }
 
-.icon{
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-}
-.menu-list .cancel-btn{
-  position: absolute;
-  right: 30px;
-  top: 20px;
-}
-@media (max-width: 1230px) {
-  .content{
-    padding: 0 60px;
-  }
-}
-@media (max-width: 1100px) {
-  .content{
-    padding: 0 40px;
-  }
-}
-@media (max-width: 900px) {
-  .content{
-    padding: 0 30px;
-  }
-}
-@media (max-width: 868px) {
-  body.disabled{
-    overflow: hidden;
-  }
-  .icon{
-    display: block;
-  }
-  .icon.hide{
-    display: none;
-  }
-  .navbar .menu-list{
-    position: fixed;
-    height: 100vh;
+
+
+img {
     width: 100%;
-    max-width: 400px;
-    left: -100%;
-    top: 0px;
-    display: block;
-    padding: 40px 0;
-    text-align: center;
-    background: #222;
-    transition: all 0.3s ease;
-  }
-  .navbar.show .menu-list{
-    left: 0%;
-  }
-  .navbar .menu-list li{
-    margin-top: 45px;
-  }
-  .navbar .menu-list li a{
-    font-size: 23px;
-    margin-left: -100%;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .navbar.show .menu-list li a{
-    margin-left: 0px;
-  }
 }
-@media (max-width: 380px) {
-  .navbar .logo a{
-    font-size: 27px;
-  }
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background: #D1CFA6;
+}
+
+.hamburger {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+header .header-left .logo {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #B8B560;
+}
+
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #ffffff;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 80px;
+        height: 450px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #B8B560;
+        transition: 0.2s;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
 }
