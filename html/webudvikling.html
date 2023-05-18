@@ -5,41 +5,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-compatible" content="ie-edge">
         <link rel="stylesheet" href="stylesheet.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
         <script src="menu.js" defer></script>
         <title>Kontakt side</title>
     </head>
     <Body>
-        <header>
-                <div class="logo">
-                    <img src="paperplane_logo-04.png" alt="" width="220" height="65">
-                </div>
-                <div class="hamburger">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <nav class="nav-bar">
-                    <ul>
-                        <li>
-                            <a href="" class="active">Home</a>
-                        </li>
-                        <li>
-                            <a href="">Webudvikling</a>
-                        </li>
-                        <li>
-                            <a href="">Digital Marketing</a>
-                        </li>
-                        <li>
-                            <a href="">referencer</a>
-                        </li>
-                        <li>
-                            <a href="">Om os</a>
-                        </li>
-                        <li>
-                            <a href="">Kontakt</a>
-                        </li>
-                </nav>
+      <header>
+        <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div onclick="window.location.href='index.html'">
+        <img src="paperplane_logo-04.png" alt="" width="220" height="65">
+      </div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+            <div onclick="window.location.href='index.html'">
+                <img src="paperplane_logo-04.png" alt="" width="220" height="65">
+            </div>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="#">Webudvikling</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Hjemmeside</a></li>
+              <li><a href="#">Webshop</a></li>
+              <li><a href="#">Hosting</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Digital marketing</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">SoMe Annoncering</a></li>
+              <li><a href="#">Google Ads</a></li>
+              <li><a href="#">SEO</a></li>
+              <li><a href="#">Analyse</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Referencer</a>
+            <i class='bx bxs-chevron-down rf-arrow arrow '></i>
+            <ul class="rf-sub-menu sub-menu">
+              <li><a href="#">Webudvikling</a></li>
+              <li><a href="#">Digital marketing</a></li>
+            </ul>
+        </li>
+
+          <li><a href="#">Om os</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
         </header>
     </Body>
 </html>
