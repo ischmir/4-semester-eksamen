@@ -4,7 +4,7 @@
   "description": "",
   "main": "javascript.js",
   "scripts": {
-    "compile": "sass --watch --no-source-map ../style/main.scss ../style/style.css"
+    "compile": "sass --watch --no-source-map ../main.scss ../style.css"
   },
   "repository": {
     "type": "git",
