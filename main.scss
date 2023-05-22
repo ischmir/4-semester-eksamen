@@ -1,12 +1,5 @@
 /*Imports*/
 @import 'reset';
-@import "component/webudvikling";
-.banner-sektion {
-    background-color: red;
-    width: 100%;
-    height: 80vh;
-
-}
 
 /*Variabler*/
 $color_1: #fff;
@@ -15,8 +8,8 @@ $font-family_1: 'Poppins', sans-serif;
 /* Googlefont Poppins CDN Link */
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap";
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 	font-family: $font-family_1;
 }
