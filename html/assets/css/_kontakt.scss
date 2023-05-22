@@ -1,0 +1,161 @@
+
+.kontakt-container1{
+	margin-top: 70px;
+	.kontakt-boks1 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 200px;
+		width: 100%;
+		color: $color_7;
+		max-width: 1300px;
+		padding-top: 120px;
+		padding-bottom: 60px;
+		margin: auto;	
+			.kontakt-overskrift {
+				background-color: $background-color_1;
+			}
+	}}
+
+.kontakt-container2 {
+	max-width: 1300px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: $color_1;
+	margin: auto;
+	background-color: $background-color_6;
+}
+
+.kontakt-container4 {
+	max-width: 1300px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: $color_1;
+	margin: auto;
+	background-color: $background-color_6;
+}
+
+input {
+	font-family: $font-family_1;
+}
+
+::placeholder {
+	color: $color_7;
+}
+textarea {
+	font-family: $font-family_1;
+}
+.contact-form {
+	background-color: $background-color_1;
+	position: relative;
+}
+
+form {
+	z-index: 10;
+	overflow: hidden;
+	position: relative;
+}
+
+.input-container {
+	position: relative;
+	margin: 1rem 0;
+}
+.input {
+	width: 100%;
+	outline: none;
+	border: 2px solid $color_7;
+	background: none;
+	padding: 0.6rem 1.2rem;
+	color: $color_7;
+	font-weight: 500;
+	font-size: 0.95rem;
+	letter-spacing: 0.5px;
+	border-radius: 25px;
+	transition: 0.3s;
+}
+textarea.input {
+	padding: 0.8rem 1.2rem;
+	min-height: 150px;
+	border-radius: 22px;
+	resize: none;
+	overflow-y: auto;
+}
+
+.btn {
+	padding: 0.6rem 1.3rem;
+	background-color: $background-color_1;
+	border: 2px solid $color_7;
+	font-size: 0.95rem;
+	color: $color_7;
+	line-height: 1;
+	border-radius: 25px;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+	margin: 0;
+	&:hover {
+		background-color: $background-color_6;
+		color: $color_1;
+	}
+}
+
+.text {
+	color: $color_7;
+	margin: 1.5rem 0 2rem 0;
+}
+
+
+.kontakt-container5 {
+	max-width: 1300px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin: auto;
+	color: $color_7;
+	.medarbejder-overskrift {
+		padding-bottom: 20px;
+	}
+	.game-board {
+	display: grid;
+	width: 100%;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 160px;
+	color: $color_7;
+	align-items: center;
+	justify-content: center;
+		.box {
+		border: 2px solid $color_7;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+		}
+}
+}
+
+.kontakt-container6 {
+	max-width: 1300px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin: auto;
+	color: $color_7;
+	.medarbejder-overskrift {
+		padding-bottom: 20px;
+	}
+	.game-board {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 160px;
+	color: $color_7;
+	align-items: center;
+	justify-content: center;
+		.box {
+		border: 2px solid $color_7;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+		}
+	}
+
+}
