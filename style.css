@@ -70,9 +70,12 @@
   border: none;
   border-radius: 50px; 
  }
- 
+ .karrusel-sektion {
+  margin: 10% auto;
+  height: 500px;
+ }
  .reference-karrusel {
-  height: 690px;
+  margin: 10% auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,7 +198,13 @@
   width: 500px;
 }
 
+.en-sektion {
+  height: 200px;
+}
 
+.en-sektion .en-container .h2-tekstfelt{
+  margin: 10% auto;
+}
 
 /* Googlefont Poppins CDN Link */
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap";
