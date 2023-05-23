@@ -1,0 +1,247 @@
+@keyframes animate {
+	0% {
+		transform: perspective(500px) translate3d(0,0,0);
+		opacity: 1;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0);
+	}
+	25% {
+		transform: perspective(500px) translate3d(-50px,-50px,50px);
+		opacity: 1;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+	}
+	35%,100% {
+		transform: perspective(500px) translate3d(-400px,-50px,100px);
+		opacity: 0;
+	}
+}
+
+.banner-sektion {
+	background-image: url(https://www.europeanstockfootage.com/wp-content/uploads/2020/10/Stock-Footages.jpg);
+	background-size: cover;
+	padding-top: 100px;
+	height: 630px;
+	.en-container {
+		.h1-tekstfelt {
+			width: 50%;
+			padding-top: 100px;
+		}
+	}
+}
+.en-container {
+	width: 100%;
+    max-width: 1300px;
+    margin: auto;
+}
+.prisberegner-sektion {
+	height: 160px;
+	background-color: $background-color_1;
+	width: 100%;
+	margin: auto;
+	.en-container {
+		display: flex;
+		justify-content: space-between;
+		padding: 5px 0 5px 0;
+	}
+	.service-box {
+		width: 50%;
+		display: flex;
+		justify-content: space-between;
+		.webshop-service {
+			background-color: $background-color_2;
+			border-radius: 125px;
+			width: 150px;
+			height: 150px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.hjemmeside-service {
+			background-color: $background-color_2;
+			border-radius: 125px;
+			width: 150px;
+			height: 150px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.marketing-service {
+			background-color: $background-color_2;
+			border-radius: 125px;
+			width: 150px;
+			height: 150px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+.split-sektion {
+	display: flex;
+	height: 790px;
+	.billede-split-sektion {
+		width: 50%;
+		background-image: url(https://www.europeanstockfootage.com/wp-content/uploads/2020/10/Stock-Footages.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.tekstfelt-split-sektion {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.knapper-split-sektion {
+			display: flex;
+			justify-content: space-evenly;
+			width: 80%;
+		}
+	}
+}
+.tekstfelt-split-overskrift {
+	width: 100%;
+	max-width: 650px;
+	margin: 0 20% 0 10%;
+}
+.knap {
+	background-color: $background-color_1;
+	padding: 15px 30px 15px 30px;
+	border: none;
+	border-radius: 50px;
+}
+.karrusel-sektion {
+	margin: 10% auto;
+	height: 500px;
+}
+.reference-karrusel {
+	margin: 10% auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loading {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	transform-style: preserve-3d;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #3E8DA8;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		background: #777777;
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+	}
+	div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #ababab;
+		transform-style: preserve-3d;
+		overflow: hidden;
+		animation: animate 10s linear infinite;
+		animation-delay: calc(2s * var(--i));
+		span {
+			position: absolute;
+			top: 0%;
+			width: 100%;
+			height: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 8em;
+			color: $color_1;
+			background: #3E8DA8;
+			font-weight: 600;
+			&:nth-child(2) {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 50%;
+				overflow: hidden;
+				background: url(../4-semester-eksamen/images/test.jpeg);
+				background-size: cover;
+			}
+		}
+	}
+}
+.billede-sektion {
+	height: 500px;
+	background-image: url(../4-semester-eksamen/images/test.jpeg);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.tre-sektion {
+	.tre-container {
+		width: 80%;
+		margin: 75px auto;
+	}
+}
+.tre-sektion-1-2-3 {
+	height: 690px;
+	display: flex;
+	justify-content: space-between;
+}
+.tre-sektion-1 {
+	width: 300px;
+}
+.tre-sektion-2 {
+	width: 300px;
+}
+.tre-sektion-3 {
+	width: 300px;
+}
+.to-sektion {
+	.to-container {
+		width: 80%;
+		margin: 75px auto;
+	}
+}
+.to-sektion-1-2 {
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+}
+.to-sektion-1 {
+	width: 500px;
+}
+.to-sektion-2 {
+	width: 500px;
+}
+.en-sektion {
+	height: 200px;
+	.en-container {
+		.h2-tekstfelt {
+			margin: 10% auto;
+		}
+	}
+}
+
+/*Lille Mobilenhed - 0px*/
+@include sm {
+
+}
+/*Stor Mobilenhed - 480px*/
+@include md {
+
+}
+
+/*Tablet/Lille Computer - 960px*/
+@include lg {
+    
+
+}
