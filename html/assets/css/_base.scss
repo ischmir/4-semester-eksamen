@@ -1,3 +1,4 @@
+
 @keyframes animate {
 	0% {
 		transform: perspective(500px) translate3d(0,0,0);
@@ -14,7 +15,6 @@
 		opacity: 0;
 	}
 }
-
 .banner-sektion {
 	background-image: url(https://www.europeanstockfootage.com/wp-content/uploads/2020/10/Stock-Footages.jpg);
 	background-size: cover;
@@ -29,8 +29,8 @@
 }
 .en-container {
 	width: 100%;
-    max-width: 1300px;
-    margin: auto;
+	max-width: 1300px;
+	margin: auto;
 }
 .prisberegner-sektion {
 	height: 160px;
@@ -100,12 +100,6 @@
 	width: 100%;
 	max-width: 650px;
 	margin: 0 20% 0 10%;
-}
-.knap {
-	background-color: $background-color_1;
-	padding: 15px 30px 15px 30px;
-	border: none;
-	border-radius: 50px;
 }
 .karrusel-sektion {
 	margin: 10% auto;
@@ -230,18 +224,55 @@
 		}
 	}
 }
-
 /*Lille Mobilenhed - 0px*/
-@include sm {
-
+@include xs {
+	.prisberegner-sektion {
+        height: fit-content;
+    }
+    .prisberegner-sektion .en-container {
+        width: 80%;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .prisberegner-tekstfelt {
+        margin: 5% auto;
+    }
+    .prisberegner-sektion .service-box {
+        width: 100%;
+        top: auto;
+        margin-bottom: 5%;
+    }
+	.prisberegner-sektion .service-box .webshop-service,
+	.prisberegner-sektion .service-box .hjemmeside-service,
+	.prisberegner-sektion .service-box .marketing-service {
+		width: 105px;
+		height: 105px;
+	}
 }
 /*Stor Mobilenhed - 480px*/
 @include md {
-
 }
-
+/*Tablet - 720px*/
+@include md {
+}
 /*Tablet/Lille Computer - 960px*/
 @include lg {
-    
+    .prisberegner-sektion {
+        height: fit-content;
+    }
+    .prisberegner-sektion .en-container {
+        width: 80%;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .prisberegner-tekstfelt {
+        margin: 5% auto;
+    }
+    .prisberegner-sektion .service-box {
+        width: 100%;
+        top: auto;
+        margin-bottom: 5%;
+    }
 
 }
+
