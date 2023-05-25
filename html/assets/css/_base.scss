@@ -6,14 +6,15 @@
 		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0);
 	}
 	25% {
-		transform: perspective(500px) translate3d(-50px,-50px,50px);
+		transform: perspective(500px) translate3d(-100px,0px,50px);
 		opacity: 1;
 		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 	}
 	35%,100% {
-		transform: perspective(500px) translate3d(-400px,-50px,100px);
+		transform: perspective(500px) translate3d(-250px,0px,50px);
 		opacity: 0;
 	}
+	
 }
 .banner-sektion {
 	background-image: url(https://www.europeanstockfootage.com/wp-content/uploads/2020/10/Stock-Footages.jpg);
@@ -33,7 +34,7 @@
 	margin: auto;
 }
 .prisberegner-sektion {
-	height: 160px;
+	height: fit-content;
 	background-color: $background-color_1;
 	width: 100%;
 	margin: auto;
@@ -46,35 +47,19 @@
 		width: 50%;
 		display: flex;
 		justify-content: space-between;
-		.webshop-service {
-			background-color: $background-color_2;
-			border-radius: 125px;
-			width: 150px;
-			height: 150px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		.hjemmeside-service {
-			background-color: $background-color_2;
-			border-radius: 125px;
-			width: 150px;
-			height: 150px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
+	}
+		.webshop-service,
+		.hjemmeside-service,
 		.marketing-service {
 			background-color: $background-color_2;
-			border-radius: 125px;
-			width: 150px;
-			height: 150px;
+			border-radius: 25px;
+			width: 200px;
+			height: 125px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 		}
 	}
-}
 .split-sektion {
 	display: flex;
 	height: 790px;
@@ -103,7 +88,7 @@
 }
 .karrusel-sektion {
 	margin: 10% auto;
-	height: 500px;
+	height: fit-content;
 }
 .reference-karrusel {
 	margin: 10% auto;
@@ -123,8 +108,8 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: #3E8DA8;
-		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+		background: $color_1;
+		
 	}
 	&:after {
 		content: '';
@@ -132,9 +117,9 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 50%;
-		background: #777777;
-		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+		height: 100%;
+		background: $color_1;
+	
 	}
 	div {
 		position: absolute;
@@ -142,31 +127,30 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: #ababab;
+		background: $background-color_1;
 		transform-style: preserve-3d;
 		overflow: hidden;
-		animation: animate 10s linear infinite;
+		animation: animate 12s linear infinite;
 		animation-delay: calc(2s * var(--i));
 		span {
 			position: absolute;
 			top: 0%;
 			width: 100%;
-			height: 50%;
+			height: 100%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			font-size: 8em;
 			color: $color_1;
-			background: #3E8DA8;
+			background: $background-color_8;
 			font-weight: 600;
 			&:nth-child(2) {
 				position: absolute;
 				bottom: 0;
 				left: 0;
 				width: 100%;
-				height: 50%;
+				height: 0%;
 				overflow: hidden;
-				background: url(../4-semester-eksamen/images/test.jpeg);
 				background-size: cover;
 			}
 		}
@@ -174,7 +158,7 @@
 }
 .billede-sektion {
 	height: 500px;
-	background-image: url(../4-semester-eksamen/images/test.jpeg);
+	background-image: url(/html/assets/img/test.jpeg);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -182,7 +166,7 @@
 .tre-sektion {
 	.tre-container {
 		width: 80%;
-		margin: 75px auto;
+		margin: 10% auto;
 	}
 }
 .tre-sektion-1-2-3 {
@@ -190,19 +174,11 @@
 	display: flex;
 	justify-content: space-between;
 }
-.tre-sektion-1 {
-	width: 300px;
-}
-.tre-sektion-2 {
-	width: 300px;
-}
-.tre-sektion-3 {
-	width: 300px;
-}
+
 .to-sektion {
 	.to-container {
 		width: 80%;
-		margin: 75px auto;
+		margin: 10% auto;
 	}
 }
 .to-sektion-1-2 {
@@ -224,55 +200,363 @@
 		}
 	}
 }
-/*Lille Mobilenhed - 0px*/
-@include xs {
+/*Lille Mobilenhed - 320px*/
+@include xs {	
+	/*Prisberegner*/
+	.en-container {
+		width: 90%;
+		max-width: none;
+		margin: auto;
+		flex-direction: column;
+		
+	}
 	.prisberegner-sektion {
-        height: fit-content;
-    }
-    .prisberegner-sektion .en-container {
-        width: 80%;
-        flex-direction: column;
-        align-items: center; 
-    }
-    .prisberegner-tekstfelt {
-        margin: 5% auto;
-    }
-    .prisberegner-sektion .service-box {
-        width: 100%;
-        top: auto;
-        margin-bottom: 5%;
-    }
-	.prisberegner-sektion .service-box .webshop-service,
-	.prisberegner-sektion .service-box .hjemmeside-service,
-	.prisberegner-sektion .service-box .marketing-service {
-		width: 105px;
-		height: 105px;
+		height: fit-content;
+		.prisberegner-tekstfelt {
+			margin-bottom: 10%;
+		}
+		.en-container{
+			align-items: center;
+			margin-top: 10%;
+    		margin-bottom: 10%;
+		}
+		.service-box {
+			margin-top: 5%;
+			margin-bottom: 5%;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+			.webshop-service {
+				width: 200px;
+				height: 125px;
+			}
+			.hjemmeside-service {
+				margin: 5% 0 5% 0;
+				width: 200px;
+				height: 125px;
+			}
+			.marketing-service {
+				width: 200px;
+				height: 125px;
+			}
+		}
+	}
+	/*Split Sektion*/
+	.split-sektion {
+		flex-direction: column;
+		.billede-split-sektion {
+			width: 100%;
+			height: 320px;
+		}
+		.tekstfelt-split-sektion {
+			width: 100%;
+			.tekstfelt-split-overskrift {
+				width: 90%;
+				margin: auto;
+			}
+			.knapper-split-sektion {
+				width: 100%;
+				display: flex;
+				justify-content: space-evenly;
+			}
+		}
+	}
+	/*Reference Sektion*/
+	.reference-karrusel{
+		margin: 20% 0% 20% 40%;
+		.loading {
+			position: relative;
+			width: 170px;
+			height: 300px;
+		}
+		@keyframes animate {
+			0% {
+				transform: perspective(500px) translate3d(0,0,0);
+				opacity: 1;
+				box-shadow: 5px 5px 15px rgba(0, 0, 0, 0);
+			}
+			25% {
+				transform: perspective(500px) translate3d(-100px,0px,50px);
+				opacity: 1;
+				box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+			}
+			35%,100% {
+				transform: perspective(500px) translate3d(-250px,0px,50px);
+				opacity: 0;
+			}
+			
+		}
+	}
+	/*Tre Sektion*/
+	.tre-sektion{
+		.tre-container {
+			width: 90%;	
+			.tre-sektion-1-2-3 {
+				flex-direction: column;
+				justify-content: flex-start;
+				margin: 10% 0;
+			}
+		}
+	}
+	/*To Sektion*/
+	.to-container {
+		width: 90%;
+		.to-sektion-1-2 {
+			flex-direction: column;
+			justify-content: flex-start;
+			.to-sektion-1{
+				margin: 10% 0;
+				width: 100%;
+				}
+			.to-sektion-2{
+				margin: 10% 0;
+				width: 100%;
+			}
+		}
+		
 	}
 }
 /*Stor Mobilenhed - 480px*/
 @include md {
+	/*Prisberegner*/
+	.en-container {
+		width: 90%;
+		max-width: none;
+		margin: auto;
+		flex-direction: column;
+		
+	}
+	.prisberegner-sektion {
+		height: fit-content;
+		.prisberegner-tekstfelt {
+			margin-bottom: 10%;
+		}
+		.en-container{
+			align-items: center;
+			margin-top: 10%;
+    		margin-bottom: 10%;
+		}
+		.service-box {
+			margin-top: 5%;
+			margin-bottom: 5%;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+			.webshop-service {
+				width: 200px;
+				height: 125px;
+			}
+			.hjemmeside-service {
+				margin: 5% 0 5% 0;
+				width: 200px;
+				height: 125px;
+			}
+			.marketing-service {
+				width: 200px;
+				height: 125px;
+			}
+		}
+	}
+	/*Split Sektion*/
+	.split-sektion {
+		flex-direction: column;
+		.billede-split-sektion {
+			width: 100%;
+			height: 320px;
+		}
+		.tekstfelt-split-sektion {
+			width: 100%;
+			.tekstfelt-split-overskrift {
+				width: 90%;
+				margin: auto;
+			}
+			.knapper-split-sektion {
+				width: 100%;
+				display: flex;
+				justify-content: space-evenly;
+			}
+		}
+	}
+	/*Reference Sektion*/
+	.reference-karrusel{
+		margin: 20% 0% 20% 40%;
+		.loading {
+			position: relative;
+			width: 170px;
+			height: 300px;
+		}
+		@keyframes animate {
+			0% {
+				transform: perspective(500px) translate3d(0,0,0);
+				opacity: 1;
+				box-shadow: 5px 5px 15px rgba(0, 0, 0, 0);
+			}
+			25% {
+				transform: perspective(500px) translate3d(-100px,0px,50px);
+				opacity: 1;
+				box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+			}
+			35%,100% {
+				transform: perspective(500px) translate3d(-250px,0px,50px);
+				opacity: 0;
+			}
+			
+		}
+	}
+	/*Tre Sektion*/
+	.tre-sektion{
+		.tre-container {
+			width: 90%;	
+			.tre-sektion-1-2-3 {
+				flex-direction: column;
+				justify-content: flex-start;
+				margin: 10% 0;
+			}
+		}
+	}
+	/*To Sektion*/
+	.to-container {
+		width: 90%;
+		.to-sektion-1-2 {
+			flex-direction: column;
+			justify-content: flex-start;
+			.to-sektion-1{
+				margin: 10% 0;
+				width: 100%;
+				}
+			.to-sektion-2{
+				margin: 10% 0;
+				width: 100%;
+			}
+		}
+		
+	}
 }
 /*Tablet - 720px*/
 @include md {
+	/*Prisberegner*/
+	.en-container {
+		width: 90%;
+		max-width: none;
+		margin: auto;
+		flex-direction: column;
+		
+	}
+	.prisberegner-sektion {
+		height: fit-content;
+		.prisberegner-tekstfelt {
+			margin-bottom: 10%;
+		}
+		.en-container{
+			align-items: center;
+			margin-top: 10%;
+    		margin-bottom: 10%;
+		}
+		.service-box {
+			margin-top: 5%;
+			margin-bottom: 5%;
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+			.webshop-service {
+				width: 200px;
+				height: 125px;
+			}
+			.hjemmeside-service {
+				margin: 5% 0 5% 0;
+				width: 200px;
+				height: 125px;
+			}
+			.marketing-service {
+				width: 200px;
+				height: 125px;
+			}
+		}
+	}
+	/*Split Sektion*/
+	.split-sektion {
+		flex-direction: column;
+		.billede-split-sektion {
+			width: 100%;
+			height: 320px;
+		}
+		.tekstfelt-split-sektion {
+			width: 100%;
+			.tekstfelt-split-overskrift {
+				width: 90%;
+				margin: auto;
+			}
+			.knapper-split-sektion {
+				width: 100%;
+				display: flex;
+				justify-content: space-evenly;
+			}
+		}
+	}
+	/*Reference Sektion*/
+	.reference-karrusel{
+		margin: 20% 0% 20% 40%;
+		.loading {
+			position: relative;
+			width: 170px;
+			height: 300px;
+		}
+		@keyframes animate {
+			0% {
+				transform: perspective(500px) translate3d(0,0,0);
+				opacity: 1;
+				box-shadow: 5px 5px 15px rgba(0, 0, 0, 0);
+			}
+			25% {
+				transform: perspective(500px) translate3d(-100px,0px,50px);
+				opacity: 1;
+				box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+			}
+			35%,100% {
+				transform: perspective(500px) translate3d(-250px,0px,50px);
+				opacity: 0;
+			}
+			
+		}
+	}
+	/*Tre Sektion*/
+	.tre-sektion{
+		.tre-container {
+			width: 90%;	
+			.tre-sektion-1-2-3 {
+				flex-direction: column;
+				justify-content: flex-start;
+				margin: 10% 0;
+			}
+		}
+	}
+	/*To Sektion*/
+	.to-container {
+		width: 90%;
+		.to-sektion-1-2 {
+			flex-direction: column;
+			justify-content: flex-start;
+			.to-sektion-1{
+				margin: 10% 0;
+				width: 100%;
+				}
+			.to-sektion-2{
+				margin: 10% 0;
+				width: 100%;
+			}
+		}
+		
+	}
 }
 /*Tablet/Lille Computer - 960px*/
 @include lg {
-    .prisberegner-sektion {
-        height: fit-content;
-    }
-    .prisberegner-sektion .en-container {
-        width: 80%;
-        flex-direction: column;
-        align-items: center; 
-    }
-    .prisberegner-tekstfelt {
-        margin: 5% auto;
-    }
-    .prisberegner-sektion .service-box {
-        width: 100%;
-        top: auto;
-        margin-bottom: 5%;
-    }
-
 }
-
+/*Computer - 1200px*/
+@include xl {
+	.prisberegner-sektion .service-box {
+		display: contents;
+	}
+}

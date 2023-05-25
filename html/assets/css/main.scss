@@ -8,8 +8,24 @@
 @import '_knapper.scss';
 
 /*Base & Layout*/
+@import '_reset.scss';
 @import '_breakpoints.scss';
 @import '_base.scss';
-@import '_index.scss';
-@import '_digital-marketing.scss';
-@import '_referencer.scss';
+
+
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+h3 {
+    font-size: 22px;
+    font-weight:500;
+}
+p {
+    font-size: 18px;
+    font-weight:400;
+}
