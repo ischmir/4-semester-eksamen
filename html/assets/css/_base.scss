@@ -20,7 +20,8 @@
 	background-image: url(https://www.europeanstockfootage.com/wp-content/uploads/2020/10/Stock-Footages.jpg);
 	background-size: cover;
 	padding-top: 100px;
-	height: 630px;
+	height: fit-content;
+	padding: 10% 0;
 	.en-container {
 		.h1-tekstfelt {
 			width: 50%;
@@ -202,6 +203,10 @@
 }
 /*Lille Mobilenhed - 320px*/
 @include xs {	
+	.h1-tekstfelt {
+		width: 90%;
+		padding-top: 100px;
+	}
 	/*Prisberegner*/
 	.en-container {
 		width: 90%;
@@ -296,6 +301,18 @@
 				flex-direction: column;
 				justify-content: flex-start;
 				margin: 10% 0;
+				.tre-sektion-1 {
+					width: 90%;
+					padding: 0 30px 0 0;
+				}
+				.tre-sektion-2 {
+					width: 90%;
+					padding: 0 30px 0 30px;
+				}
+				.tre-sektion-3 {
+					width: 90%;
+					padding: 0 0 0 30px;
+				}
 			}
 		}
 	}
@@ -320,6 +337,14 @@
 /*Stor Mobilenhed - 480px*/
 @include md {
 	/*Prisberegner*/
+	.banner-sektion {
+		.en-container {
+			.h1-tekstfelt {
+				width: 90%;
+				padding-top: 100px;
+			}
+		}
+	}
 	.en-container {
 		width: 90%;
 		max-width: none;
@@ -413,6 +438,18 @@
 				flex-direction: column;
 				justify-content: flex-start;
 				margin: 10% 0;
+				.tre-sektion-1 {
+					width: 90%;
+					padding: 0 30px 0 0;
+				}
+				.tre-sektion-2 {
+					width: 90%;
+					padding: 0 30px 0 30px;
+				}
+				.tre-sektion-3 {
+					width: 90%;
+					padding: 0 0 0 30px;
+				}
 			}
 		}
 	}
@@ -524,11 +561,23 @@
 	/*Tre Sektion*/
 	.tre-sektion{
 		.tre-container {
-			width: 90%;	
+			width: 80%;	
 			.tre-sektion-1-2-3 {
 				flex-direction: column;
 				justify-content: flex-start;
 				margin: 10% 0;
+				.tre-sektion-1 {
+					width: 80%;
+					padding: 0 15px 0 0;
+				}
+				.tre-sektion-2 {
+					width: 80%;
+					padding: 0 15px 0 15px;
+				}
+				.tre-sektion-3 {
+					width: 80%;
+					padding: 0 0 0 15px;
+				}
 			}
 		}
 	}
@@ -536,7 +585,7 @@
 	.to-container {
 		width: 90%;
 		.to-sektion-1-2 {
-			flex-direction: row;
+			flex-direction: column;
 			justify-content:space-around;
 			.to-sektion-1{
 				margin: 10% 0;
@@ -645,6 +694,18 @@
 				flex-direction: row;
 				justify-content: space-between;
 				margin: 10% 0;
+				.tre-sektion-1 {
+					width: 33.33%;
+					padding: 0 30px 0 0;
+				}
+				.tre-sektion-2 {
+					width: 33.33%;
+					padding: 0 30px 0 30px;
+				}
+				.tre-sektion-3 {
+					width: 33.33%;
+					padding: 0 0 0 30px;
+				}
 			}
 		}
 	}
@@ -754,6 +815,7 @@
 			.reference-tekst {
 				width: 50%;
 			}
+		}
 	}
 	
 		@keyframes animate {
@@ -773,7 +835,6 @@
 			}
 			
 		}
-	}
 	/*Tre Sektion*/
 	.tre-sektion{
 		.tre-container {
@@ -784,6 +845,18 @@
 				flex-direction: row;
 				justify-content: space-between;
 				margin: 10% 0;
+				.tre-sektion-1 {
+					width: 33.33%;
+					padding: 0 30px 0 0;
+				}
+				.tre-sektion-2 {
+					width: 33.33%;
+					padding: 0 30px 0 30px;
+				}
+				.tre-sektion-3 {
+					width: 33.33%;
+					padding: 0 0 0 30px;
+				}
 			}
 		}
 	}
