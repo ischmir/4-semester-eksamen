@@ -32,3 +32,8 @@ p {
     font-size: 16px;
     font-weight:400;
 }
+
+body {
+    font-family: $font-family_1;
+    min-height: 100vh;
+}
