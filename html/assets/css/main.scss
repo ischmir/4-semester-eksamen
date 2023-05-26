@@ -8,16 +8,13 @@
 @use '_knapper.scss';
 
 /*Base & Layout*/
-@use '_breakpoints.scss';
-@use '_base.scss';
-@use '_index.scss';
-@use '_webudvikling.scss';
-@use '_digital-marketing.scss';
-@use '_om-os.scss';
-@use '_kontakt.scss';
+@import '_reset.scss';
+@import '_breakpoints.scss';
+@import '_base.scss';
+
 
 h1 {
-    font-size: 92px;
+    font-size: 42px;
     font-weight: 600;
 }
 h2 {

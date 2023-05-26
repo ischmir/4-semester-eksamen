@@ -1,6 +1,26 @@
 .knap {
-	background-color: $background-color_1;
+	background-color: $background-color_2;
 	padding: 15px 30px 15px 30px;
 	border: none;
 	border-radius: 50px;
+}
+
+	.webshop-service {
+		background-color: $background-color_2;
+		border-radius: 25px;
+		width: 200px;
+		height: 125px;
+}
+	.hjemmeside-service {
+	background-color: $background-color_2;
+	border-radius: 25px;
+	width: 200px;
+	height: 125px;
+}
+
+	.marketing-service {
+		background-color: $background-color_2;
+		border-radius: 25px;
+		width: 200px;
+		height: 125px;
 }
