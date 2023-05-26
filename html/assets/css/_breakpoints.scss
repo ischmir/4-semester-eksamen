@@ -1,15 +1,4 @@
 $breakpoints: (
-<<<<<<< Updated upstream
-    "xs": 320px, /*90%*/
-    "sm": 480px, /*90%*/
-    "md": 720px, /*80%*/
-    "lg": 960px, /*80%*/
-    "xl": 1200px, /*75%*/
-);
-
-@mixin xs {
-    @media (min-width: map-get($breakpoints, xs)) {
-=======
     "mx-xs": 320px, /*90%*/
     "mx-sm": 480px, /*90%*/
     "mx-md": 768px, /*80%*/
@@ -26,41 +15,25 @@ $breakpoints: (
 
 @mixin xs {
     @media (max-width: map-get($breakpoints, mx-xs)) {
->>>>>>> Stashed changes
         @content;
     }
 }
 @mixin sm {
-<<<<<<< Updated upstream
-    @media (min-width: map-get($breakpoints, sm)) {
-=======
     @media (max-width: map-get($breakpoints, mx-sm)) {
->>>>>>> Stashed changes
         @content;
     }
 }
 @mixin md {
-<<<<<<< Updated upstream
-    @media (min-width: map-get($breakpoints, md)) {
-=======
     @media (max-width: map-get($breakpoints, mx-md)) {
->>>>>>> Stashed changes
         @content;
     }
 }
 @mixin lg {
-<<<<<<< Updated upstream
-    @media (min-width: map-get($breakpoints, lg)) {
-=======
     @media (max-width: map-get($breakpoints, mx-lg)) {
->>>>>>> Stashed changes
         @content;
     }
 }
 @mixin xl {
-<<<<<<< Updated upstream
-    @media (min-width: map-get($breakpoints, xl)) {
-=======
     @media (max-width: map-get($breakpoints, mx-xl)) {
         @content;
     }
@@ -95,7 +68,6 @@ $breakpoints: (
 }
 @mixin mn {
     @media (min-width: map-get($breakpoints, mn-mn)) {
->>>>>>> Stashed changes
         @content;
     }
 }
