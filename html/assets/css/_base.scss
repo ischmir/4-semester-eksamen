@@ -203,7 +203,7 @@
 	}
 }
 /*Lille Mobilenhed - 320px*/
-@include xs {	
+@include mn-xs {	
 	.h1-tekstfelt {
 		width: 90%;
 		padding-top: 100px;
@@ -336,7 +336,7 @@
 	}
 }
 /*Stor Mobilenhed - 480px*/
-@include md {
+@include mn-md {
 	/*Prisberegner*/
 	.banner-sektion {
 		.en-container {
@@ -472,7 +472,7 @@
 	}
 }
 /*Tablet - 720px*/
-@include md {
+@include mn-md {
 	/*Prisberegner*/
 	.en-container {
 		width: 90%;
@@ -600,7 +600,7 @@
 	}
 }
 /*Tablet/Lille Computer - 960px*/
-@include lg {
+@include mn-lg {
 	/*Prisberegner*/
 	.en-container {
 		width: 90%;
@@ -728,7 +728,7 @@
 	}
 }
 /*Computer - 1200px*/
-@include xl {
+@include mn-xl {
 	/*Prisberegner*/
 	.en-container {
 		width: 75%;
@@ -867,7 +867,7 @@
 		max-width: 1300px;
 		margin: auto;
 		.to-sektion-1-2 {
-			flex-direction: column;
+			flex-direction: row;
 			justify-content:space-around;
 			.to-sektion-1{
 				margin: 10% 0;
