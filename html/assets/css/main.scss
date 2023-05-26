@@ -1,17 +1,21 @@
-/*main*/
+/*Main rettet til brunch*/
 /*Font & Farver*/
 @import '_font.scss';
-@use '_color.scss';
+@import '_color.scss';
 
 /*Header, Footer & Knapper*/
-@use '_header.scss';
-@use '_footer.scss';
-@use '_knapper.scss';
+@import '_header.scss';
+@import '_footer.scss';
+@import '_knapper.scss';
 
-/*Base & Layout*/
+/*Basic & Layout*/
 @import '_reset.scss';
 @import '_breakpoints.scss';
 @import '_base.scss';
+@import '_kontakt.scss';
+@import '_om-os.scss';
+@import '_referencer.scss';
+
 
 
 h1 {
@@ -27,6 +31,6 @@ h3 {
     font-weight:500;
 }
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight:400;
 }
