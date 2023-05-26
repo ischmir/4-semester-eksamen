@@ -128,62 +128,63 @@ $background-color_4: #ffffff;
 	padding-bottom: 20px;
 }
 
-.input-container {
-    position: relative;
-    margin: 1rem 0;
-  }
+$color_1: #B8B560;
+$color_2: #ffffff;
+$font-family_1: 'Poppins', sans-serif;
+$background-color_1: #ffffff;
+$background-color_2: #B8B560;
 
-  .contact-form-input {
-    width: 100%;
-    outline: none;
-    border: 2px solid #B8B560;
-    background: none;
-    padding: 0.6rem 1.2rem;
-    color: #B8B560;
-    font-weight: 500;
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
-    border-radius: 25px;
-    transition: 0.3s;
-  }
-  
-  .contact-form-input::placeholder {
-	color: #B8B560;
-  font-family: 'Poppins', sans-serif;
-  }
-  
-  .contact-form-textarea {
+.input-container {
+	position: relative;
+	margin: 1rem 0;
+}
+.contact-form-input {
+	width: 100%;
+	outline: none;
+	border: 2px solid #B8B560;
+	background: none;
+	padding: 0.6rem 1.2rem;
+	color: $color_1;
+	font-weight: 500;
+	font-size: 0.95rem;
+	letter-spacing: 0.5px;
+	border-radius: 25px;
+	transition: 0.3s;
+	&::placeholder {
+		color: $color_1;
+		font-family: $font-family_1;
+	}
+}
+.contact-form-textarea {
 	padding: 0.8rem 1.2rem;
 	min-height: 150px;
 	border-radius: 22px;
 	resize: none;
 	overflow-y: auto;
-  }
-  
-  .form-submit-btn:hover {
-    padding: 15px 30px 15px 30px;
-    background-color:#ffffff;
-    border: 2px solid #B8B560;
-    font-size: 16px;
-    color: #B8B560;
-    line-height: 1;
-    border-radius: 50px;
-    outline: none;
-    cursor: pointer;
-    transition: 0.3s;
-    margin: 0;
-  }
-
-  .form-submit-btn {
-    padding: 15px 30px 15px 30px;
-    background-color:#B8B560;
-    border: 2px solid #B8B560;
-    font-size: 16px;
-    color: #ffffff;
-    line-height: 1;
-    border-radius: 50px;
-    outline: none;
-    cursor: pointer;
-    transition: 0.3s;
-    margin: 0;
-  }
+}
+.form-submit-btn {
+	&:hover {
+		padding: 15px 30px 15px 30px;
+		background-color: $background-color_1;
+		border: 2px solid #B8B560;
+		font-size: 16px;
+		color: $color_1;
+		line-height: 1;
+		border-radius: 50px;
+		outline: none;
+		cursor: pointer;
+		transition: 0.3s;
+		margin: 0;
+	}
+	padding: 15px 30px 15px 30px;
+	background-color: $background-color_2;
+	border: 2px solid #B8B560;
+	font-size: 16px;
+	color: $color_2;
+	line-height: 1;
+	border-radius: 50px;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+	margin: 0;
+}
