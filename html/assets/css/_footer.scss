@@ -45,7 +45,7 @@ $background-color_10: transparent;
 			width: 40px;
 			border-radius: 50%;
 			border: 2px solid #B8B560;
-			background: #B8B560;
+			background: $background-color_6;
 			text-align: center;
 			line-height: 40px;
 			color: $color_1;
@@ -57,7 +57,7 @@ $background-color_10: transparent;
 }
 footer {
 	margin-top: auto;
-	background-color: $background-color_7;
+	background: $background-color_7;
 	width: 100%;
 	.content {
 		max-width: 75%;
@@ -88,7 +88,7 @@ footer {
 	.media-icons {
 		a {
 			&:hover {
-				background: #D1CFA6;
+				background-color: $background-color_7;
 			}
 		}
 	}
