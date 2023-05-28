@@ -1,6 +1,5 @@
 /*main*/
-$color_1: #fff;
-$color_2: #878F57;
+
 
 .separator {
 	display: flex;
@@ -10,7 +9,7 @@ $color_2: #878F57;
 	.line {
 		height: 1px;
 		flex: 1;
-		border: 2px dashed #B8B560;
+		border: 2px dashed $color_6;
 	}
 	.media-icons {
 		padding: 0 2rem;
@@ -24,8 +23,8 @@ $color_2: #878F57;
 			height: 40px;
 			width: 40px;
 			border-radius: 50%;
-			border: 2px solid #B8B560;
-			background: #B8B560;
+			border: 2px solid $color_6;
+			background: $background-color_6;
 			text-align: center;
 			line-height: 40px;
 			color: $color_1;
@@ -37,7 +36,7 @@ $color_2: #878F57;
 }
 footer {
 	margin-top: auto;
-	background: #D1CFA6;
+	background: $background-color_7;
 	width: 100%;
 	.content {
 		max-width: 75%;
@@ -68,7 +67,7 @@ footer {
 	.media-icons {
 		a {
 			&:hover {
-				background: #D1CFA6;
+				background-color: $background-color_7;
 			}
 		}
 	}
@@ -93,7 +92,7 @@ footer {
 					text-decoration: none;
 					transition: all 0.4s ease;
 					&:hover {
-						color: $color_2;
+						color: $color_8;
 					}
 				}
 			}
