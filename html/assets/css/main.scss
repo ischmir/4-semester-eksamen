@@ -1,4 +1,6 @@
-/*Main rettet til brunch*/
+/*Breakpoints*/
+@import '_breakpoints.scss';
+
 /*Font & Farver*/
 @import '_font.scss';
 @import '_color.scss';
@@ -10,7 +12,6 @@
 
 /*Basic & Layout*/
 @import '_reset.scss';
-@import '_breakpoints.scss';
 @import '_base.scss';
 @import '_sektioner.scss';
 
