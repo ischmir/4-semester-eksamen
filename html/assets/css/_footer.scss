@@ -1,6 +1,4 @@
 /*main*/
-$color_1: #fff;
-$color_2: #878F57;
 
 .separator {
 	display: flex;
@@ -113,43 +111,54 @@ footer {
 	}
 }
 
-@include mx-sm {
-    footer .content{
-		max-width: 90%;
-	  }
-  
-	  footer .bottom-details{
-		max-width: 90%;
-	  }
-	  
-	  footer .content .link-boxes .box{
-		width: calc(100% / 2 - 10px);
-	  }
-}
-@include mx-md {
-    footer .content{
-		max-width: 80%;
-	  }
-  
-	  footer .bottom-details{
-		max-width: 80%;
-	  }
-  
-  
-	  footer .content .link-boxes .box{
-		width: calc(100% / 2 - 10px);
-	  }
-}
+
+
+
+
+
 @include mx-lg {
+
     footer .content{
-		max-width: 80%;
-	  }
-  
-	  footer .bottom-details{
-		max-width: 80%;
-	  }
-  
-	  footer .content .link-boxes{
-		flex-wrap: wrap;
-	  }
+      max-width: 80%;
+    }
+
+    footer .bottom-details{
+      max-width: 80%;
+    }
+
+    footer .content .link-boxes{
+      flex-wrap: wrap;
+    }
 }
+
+  @include mx-md {
+    footer .content{
+      max-width: 80%;
+    }
+
+    footer .bottom-details{
+      max-width: 80%;
+    }
+
+
+    footer .content .link-boxes .box{
+      width: calc(100% / 2 - 10px);
+    }    
+
+  }
+
+  @include mx-sm {    
+    footer .content{
+      max-width: 90%;
+    }
+
+    footer .bottom-details{
+      max-width: 90%;
+    }
+    
+    footer .content .link-boxes .box{
+      width: calc(100% / 2 - 10px);
+    }
+  }
+
+
