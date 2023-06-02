@@ -16,7 +16,7 @@ a {
 .header {
 	position: absolute;
 	width: 100%;
-	background-color: $background-color_1;
+	background-color: $background-color_7;
 	left: 0;
 	top: 0;
 	z-index: 99;
@@ -52,7 +52,7 @@ a {
 						box-sizing: border-box;
 						left: 50%;
 						top: 50%;
-						background-color: $background-color_2;
+						background-color: $background-color_1;
 						height: 2px;
 						width: 100%;
 						transform: translate(-50%,-50%);
@@ -64,7 +64,7 @@ a {
 						box-sizing: border-box;
 						left: 50%;
 						top: 50%;
-						background-color: $background-color_2;
+						background-color: $background-color_1;
 						height: 2px;
 						width: 100%;
 						transform: translate(-50%,-50%);
@@ -75,13 +75,13 @@ a {
 			}
 			&:hover {
 				a {
-					color: $color_2;
+					color: $color_9;
 					.plus {
 						&:before {
-							background-color: $background-color_3;
+							background-color: $background-color_9;
 						}
 						&:after {
-							background-color: $background-color_3;
+							background-color: $background-color_9;
 						}
 					}
 				}
@@ -92,9 +92,9 @@ a {
 				position: absolute;
 				left: 0;
 				top: 100%;
-				background-color: $background-color_1;
+				background-color: $background-color_7;
 				padding: 10px 0;
-				border-top: 3px solid #D1CFA6;
+				border-top: 3px solid $color_7;
 				transform: translateY(10px);
 				transition: all 0.3s ease;
 				opacity: 0;
@@ -102,7 +102,7 @@ a {
 				.menu-item {
 					a {
 						&:hover {
-							color: $color_2;
+							color: $color_9;
 						}
 					}
 				}
@@ -186,7 +186,7 @@ a {
 .header .close-nav-menu{
 	height: 20px;
 	width: 20px;
-	background-color: #D1CFA6;
+	background-color: $background-color_7;
 	margin:0 0 15px 15px;
 	cursor: pointer;
 	display: none;
@@ -196,7 +196,7 @@ a {
 .header .menu-overlay{
 	position: fixed;
 	z-index: 999;
-	background-color: #3e43395b;
+	background-color: $background-color_10;
 	left:0;
 	top:0;
 	height: 100%;
@@ -226,7 +226,7 @@ a {
 		height: 100%;
 		top:0;
 		overflow-y: auto;
-		background-color: #D1CFA6;
+		background-color: $background-color_7;
 		z-index: 1000;
 		padding: 35px 20px;
 		transition: all 0.5s ease;
@@ -265,7 +265,7 @@ a {
 		opacity: 1;
 		visibility: visible;
 		border:none;
-		background-color: transparent;
+		background-color: $background-color_11;
 		box-shadow: none;
 		transform: translateY(0px);
 		padding: 0px;
