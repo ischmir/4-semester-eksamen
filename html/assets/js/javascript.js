@@ -1,4 +1,3 @@
-// main
 (() =>{
  
   const openNavMenu = document.querySelector(".open-nav-menu"),
@@ -85,3 +84,23 @@ formInputs.forEach((input) => {
     }, 300);
   });
 });
+
+// henter knappen
+let mybutton = document.getElementById("myBtn");
+
+// Når brugeren begynder at scrolle ned på siden (20px) så vises knappen.
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// Når brugeren trykke på knappen scroller den tilbage til toppen.
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
