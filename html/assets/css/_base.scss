@@ -82,9 +82,15 @@
 .split-sektion {
 	display: flex;
 	height: fit-content;
-	.billede-split-sektion {
+	.billede-split-sektion-1 {
 		width: 50%;
-		background-image: url(https://www.europeanstockfootage.com/wp-content/uploads/2020/10/Stock-Footages.jpg);
+		background-image: url(/html/assets/img/split-billede-3.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.billede-split-sektion-2 {
+		width: 50%;
+		background-image: url(/html/assets/img/split-billede-4.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
@@ -110,7 +116,7 @@
 	height: fit-content;
 }
 .reference-karrusel {
-	margin: 10% auto;
+	margin: 40px auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -175,9 +181,37 @@
 		}
 	}
 }
-.billede-sektion {
-	height: 500px;
-	background-image: url(/html/assets/img/test.jpeg);
+.billede-sektion-1 {
+	min-height: 500px;
+	background-image: url(/html/assets/img/banner-1.png);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.billede-sektion-2 {
+	min-height: 500px;
+	background-image: url(/html/assets/img/banner-2.png);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.billede-sektion-3 {
+	min-height: 500px;
+	background-image: url(/html/assets/img/banner-3.png);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.billede-sektion-4 {
+	min-height: 500px;
+	background-image: url(/html/assets/img/banner-4.png);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.billede-sektion-5 {
+	min-height: 500px;
+	background-image: url(/html/assets/img/banner-5.png);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -273,7 +307,11 @@
 	/*Split Sektion*/
 	.split-sektion {
 		flex-direction: column;
-		.billede-split-sektion {
+		.billede-split-sektion-1 {
+			width: 100%;
+			height: 320px;
+		}
+		.billede-split-sektion-2 {
 			width: 100%;
 			height: 320px;
 		}
@@ -292,7 +330,7 @@
 	}
 	/*Reference Sektion*/
 	.reference-karrusel{
-		margin: 20% 0% 20% 40%;
+		margin: 40px 0% 20% 40%;
 		.loading {
 			position: relative;
 			width: 170px;
@@ -316,6 +354,9 @@
 			
 		}
 	}
+	.billede-halv {
+		width: 90%;
+	}
 	/*Tre Sektion*/
 	.tre-sektion{
 		.tre-container {
@@ -323,7 +364,7 @@
 			.tre-sektion-1-2-3 {
 				flex-direction: column;
 				justify-content: flex-start;
-				margin: 10% 0;
+				margin: 40px 0;
 				.tre-sektion-1 {
 					width: 90%;
 					padding: 10px 0;
@@ -410,7 +451,11 @@
 	/*Split Sektion*/
 	.split-sektion {
 		flex-direction: column;
-		.billede-split-sektion {
+		.billede-split-sektion-1 {
+			width: 100%;
+			height: 320px;
+		}
+		.billede-split-sektion-2 {
 			width: 100%;
 			height: 320px;
 		}
@@ -429,7 +474,7 @@
 	}
 	/*Reference Sektion*/
 	.reference-karrusel{
-		margin: 20% 0% 20% 40%;
+		margin: 40px 0% 20% 40%;
 		.loading {
 			position: relative;
 			width: 170px;
@@ -453,6 +498,9 @@
 			
 		}
 	}
+	.billede-halv {
+		width: 90%;
+	}
 	/*Tre Sektion*/
 	.tre-sektion{
 		.tre-container {
@@ -460,7 +508,7 @@
 			.tre-sektion-1-2-3 {
 				flex-direction: column;
 				justify-content: flex-start;
-				margin: 10% 0;
+				margin: 40px 0;
 				.tre-sektion-1 {
 					width: 90%;
 					padding: 10px 0;
@@ -538,7 +586,12 @@
 	/*Split Sektion*/
 	.split-sektion {
 		flex-direction: column;
-		.billede-split-sektion {
+		.billede-split-sektion-1 {
+			width: 80%;
+			margin: auto;
+			height: 320px;
+		}
+		.billede-split-sektion-2 {
 			width: 80%;
 			margin: auto;
 			height: 320px;
@@ -559,7 +612,7 @@
 	}
 	/*Reference Sektion*/
 	.reference-karrusel{
-		margin: 20% 0% 20% 40%;
+		margin: 40px 0% 20% 40%;
 		.loading {
 			position: relative;
 			width: 170px;
@@ -583,6 +636,9 @@
 			
 		}
 	}
+	.billede-halv {
+		width: 80%;
+	}
 	/*Tre Sektion*/
 	.tre-sektion{
 		.tre-container {
@@ -590,7 +646,7 @@
 			.tre-sektion-1-2-3 {
 				flex-direction: column;
 				justify-content: flex-start;
-				margin: 10% 0;
+				margin: 40px 0;
 				.tre-sektion-1 {
 					width: 80%;
 					padding: 10px 0;
@@ -668,7 +724,11 @@
 	/*Split Sektion*/
 	.split-sektion {
 		flex-direction: column;
-		.billede-split-sektion {
+		.billede-split-sektion-1 {
+			width: 100%;
+			height: 320px;
+		}
+		.billede-split-sektion-2 {
 			width: 100%;
 			height: 320px;
 		}
@@ -688,7 +748,7 @@
 	}
 	/*Reference Sektion*/
 	.reference-karrusel{
-		margin: 20% 0% 20% 40%;
+		margin: 40px 0% 20% 40%;
 		.loading {
 			position: relative;
 			width: 170px;
@@ -712,6 +772,9 @@
 			
 		}
 	}
+	.billede-halv {
+		width: 50%;
+	}
 	/*Tre Sektion*/
 	.tre-sektion{
 		.tre-container {
@@ -719,7 +782,7 @@
 			.tre-sektion-1-2-3 {
 				flex-direction: row;
 				justify-content: space-between;
-				margin: 10% 0;
+				margin: 40px 0;
 				.tre-sektion-1 {
 					width: 33.33%;
 					padding: 0 30px 0 0;
@@ -801,7 +864,11 @@
 	/*Split Sektion*/
 	.split-sektion {
 		flex-direction: row;
-		.billede-split-sektion {
+		.billede-split-sektion-1 {
+			width: 100%;
+			height: 320px;
+		}
+		.billede-split-sektion-2 {
 			width: 100%;
 			height: 320px;
 		}
@@ -831,7 +898,7 @@
 				width: 50%;
 				max-width: 1300px;
 				margin: auto;
-				margin: 10% 0 10% 0;
+				margin: 40px 0 10% 0;
 				.loading {
 					position: relative;
 					width: 170px;
@@ -864,6 +931,9 @@
 			}
 			
 		}
+		.billede-halv {
+			width: 50%;
+		}
 	/*Tre Sektion*/
 	.tre-sektion{
 		.tre-container {
@@ -873,7 +943,7 @@
 			.tre-sektion-1-2-3 {
 				flex-direction: row;
 				justify-content: space-between;
-				margin: 10% 0;
+				margin: 40px 0;
 				.tre-sektion-1 {
 					width: 33.33%;
 					padding: 0 30px 0 0;
