@@ -86,16 +86,16 @@ formInputs.forEach((input) => {
 });
 
 // henter knappen
-let mybutton = document.getElementById("myBtn");
+let top_knap = document.getElementById("back-to-top-knap");
 
 // Når brugeren begynder at scrolle ned på siden (20px) så vises knappen.
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    top_knap.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    top_knap.style.display = "none";
   }
 }
 

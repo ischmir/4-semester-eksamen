@@ -1,42 +1,49 @@
 /*Almen knap*/
 .knap {
-	background-color: $background-color_2;
+	background-color: $background-color_6;
 	padding: 15px 30px 15px 30px;
-	border: none;
+	border: 3px solid $background-color_6;
 	border-radius: 50px;
 	font-size: 16px;
+	&:hover {
+		background-color: $background-color_11;
+		border: 3px solid $background-color_6;
+	}
 }
 /*Prisberegner knapper*/
 .webshop-service {
-	background-color: $background-color_2;
+	background-color: $background-color_7;
+	color:$color_1;
 	border-radius: 25px;
 	width: 200px;
 	height: 125px;
 	&:hover {
-		background-color: $background-color_3;
+		background-color: $background-color_8;
 	}
 }
 .hjemmeside-service {
-	background-color: $background-color_2;
+	background-color: $background-color_7;
+	color:$color_1;
 	border-radius: 25px;
 	width: 200px;
 	height: 125px;
 	&:hover {
-		background-color: $background-color_3;
+		background-color: $background-color_8;
 	}
 }
 
 .marketing-service {
-	background-color: $background-color_2;
+	background-color: $background-color_7;
+	color:$color_1;
 	border-radius: 25px;
 	width: 200px;
 	height: 125px;
 	&:hover {
-	background-color: $background-color_3;
+	background-color: $background-color_8;
 	}
 }
 /*Back to top knap*/
-#myBtn {
+#back-to-top-knap {
 	display: none;
 	position: fixed;
 	bottom: 20px;
@@ -45,12 +52,12 @@
 	font-size: 18px;
 	border: none;
 	outline: none;
-	background-color: $background-color_2;
+	background-color: $background-color_6;
 	color: $color_1;
 	cursor: pointer;
 	padding: 15px;
 	border-radius: 4px;
 	&:hover {
-		background-color: $background-color_3;
+		background-color: $background-color_9;
 	}
 }
