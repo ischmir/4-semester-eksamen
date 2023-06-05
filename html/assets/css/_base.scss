@@ -17,16 +17,36 @@
 	}
 	
 }
-.banner-sektion {
-	background-image: url(https://www.europeanstockfootage.com/wp-content/uploads/2020/10/Stock-Footages.jpg);
-	background-size: cover;
-	padding-top: 100px;
-	height: fit-content;
-	padding: 10% 0;
+.banner-sektion-forside {
+	background-image: url(/html/assets/img/banner-4.png);
+	background-size:cover;
+	min-height: 500px;
+	padding: 40px 0;
 	.en-container {
 		.h1-tekstfelt {
 			width: 50%;
-			padding-top: 100px;
+		}
+	}
+}
+.banner-sektion-webudvikling {
+	background-image: url(/html/assets/img/banner-3.png);
+	background-size: cover;
+	min-height: 500px;
+	padding: 40px 0;
+	.en-container {
+		.h1-tekstfelt {
+			width: 50%;
+		}
+	}
+}
+.banner-sektion-marketing {
+	background-image: url(/html/assets/img/banner-2.png);
+	background-size: cover;
+	min-height: 500px;
+	padding: 40px 0;
+	.en-container {
+		.h1-tekstfelt {
+			width: 50%;
 		}
 	}
 }
@@ -37,7 +57,7 @@
 }
 .prisberegner-sektion {
 	height: fit-content;
-	background-color: $background-color_1;
+	background-color: $background-color_9;
 	width: 100%;
 	margin: auto;
 	.en-container {
@@ -199,6 +219,11 @@
 		}
 	}
 }
+.kontakt-formular-sektion {
+	padding: 5% 0;
+	background-color: $background-color_7;
+
+}
 /*Lille Mobilenhed - 320px*/
 @include mn-xs {	
 	.h1-tekstfelt {
@@ -301,15 +326,15 @@
 				margin: 10% 0;
 				.tre-sektion-1 {
 					width: 90%;
-					padding: 0 30px 0 0;
+					padding: 10px 0;
 				}
 				.tre-sektion-2 {
 					width: 90%;
-					padding: 0 30px 0 30px;
+					padding: 10px 0;
 				}
 				.tre-sektion-3 {
 					width: 90%;
-					padding: 0 0 0 30px;
+					padding: 10px 0;
 				}
 			}
 		}
@@ -438,15 +463,15 @@
 				margin: 10% 0;
 				.tre-sektion-1 {
 					width: 90%;
-					padding: 0 30px 0 0;
+					padding: 10px 0;
 				}
 				.tre-sektion-2 {
 					width: 90%;
-					padding: 0 30px 0 30px;
+					padding: 10px 0;
 				}
 				.tre-sektion-3 {
 					width: 90%;
-					padding: 0 0 0 30px;
+					padding: 10px 0;
 				}
 			}
 		}
@@ -468,11 +493,11 @@
 		}
 	}
 }
-/*Tablet - 720px*/
+/*Tablet - 768px*/
 @include mn-md {
 	/*Prisberegner*/
 	.en-container {
-		width: 90%;
+		width: 80%;
 		max-width: none;
 		margin: auto;
 		flex-direction: column;
@@ -514,13 +539,15 @@
 	.split-sektion {
 		flex-direction: column;
 		.billede-split-sektion {
-			width: 100%;
+			width: 80%;
+			margin: auto;
 			height: 320px;
 		}
 		.tekstfelt-split-sektion {
 			width: 100%;
+			margin: auto;
 			.tekstfelt-split-overskrift {
-				width: 90%;
+				width: 80%;
 				margin: auto;
 			}
 			.knapper-split-sektion {
@@ -566,22 +593,22 @@
 				margin: 10% 0;
 				.tre-sektion-1 {
 					width: 80%;
-					padding: 0 15px 0 0;
+					padding: 10px 0;
 				}
 				.tre-sektion-2 {
 					width: 80%;
-					padding: 0 15px 0 15px;
+					padding: 10px 0;
 				}
 				.tre-sektion-3 {
 					width: 80%;
-					padding: 0 0 0 15px;
+					padding: 10px 0;
 				}
 			}
 		}
 	}
 	/*To Sektion*/
 	.to-container {
-		width: 90%;
+		width: 80%;
 		.to-sektion-1-2 {
 			flex-direction: column;
 			justify-content:space-around;
@@ -596,11 +623,11 @@
 		}
 	}
 }
-/*Tablet/Lille Computer - 960px*/
+/*Tablet/Lille Computer - 992px*/
 @include mn-lg {
 	/*Prisberegner*/
 	.en-container {
-		width: 90%;
+		width: 80%;
 		max-width: none;
 		margin: auto;
 		flex-direction: column;
@@ -646,10 +673,11 @@
 			height: 320px;
 		}
 		.tekstfelt-split-sektion {
-			width: 100%;
-			.tekstfelt-split-overskrift {
-				width: 90%;
+				width: 80%;
 				margin: auto;
+			.tekstfelt-split-overskrift {
+				width: 100%;	
+				margin: 0;
 			}
 			.knapper-split-sektion {
 				width: 100%;
@@ -687,7 +715,7 @@
 	/*Tre Sektion*/
 	.tre-sektion{
 		.tre-container {
-			width: 90%;	
+			width: 80%;	
 			.tre-sektion-1-2-3 {
 				flex-direction: row;
 				justify-content: space-between;
@@ -709,7 +737,7 @@
 	}
 	/*To Sektion*/
 	.to-container {
-		width: 90%;
+		width: 80%;
 		.to-sektion-1-2 {
 			flex-direction: row;
 			justify-content:space-around;
@@ -783,9 +811,9 @@
 			margin: auto;
 			.tekstfelt-split-overskrift {
 				width: 100%;
-				margin: 0;
+				margin: auto;
 				max-width: 600px;
-				padding: 0 0 0 50px;
+				padding: 0 50px 0 50px;
 			}
 			.knapper-split-sektion {
 				width: 100%;
@@ -812,6 +840,9 @@
 			}
 			.reference-tekst {
 				width: 50%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 			}
 		}
 	}
