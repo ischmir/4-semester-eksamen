@@ -112,8 +112,13 @@
 	margin: 0 20% 0 10%;
 }
 .karrusel-sektion {
-	margin: 10% auto;
+	margin-top: 40px;
+	padding: 10% auto;
 	height: fit-content;
+	background-image: url(/html/assets/img/baggrundsgrafik-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
 }
 .reference-karrusel {
 	margin: 40px auto;
@@ -215,6 +220,21 @@
 	background-size: cover;
 	display: flex;
 	align-items: center;
+}
+.billede-sektion-6 {
+	min-height: 500px;
+	background-color: $background-color_7;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.billede-sektion-7 {
+	min-height: 500px;
+	background-color: $background-color_1;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	margin: 40px 0;
 }
 .tre-sektion {
 	.tre-container {
@@ -562,12 +582,12 @@
 	.prisberegner-sektion {
 		height: fit-content;
 		.prisberegner-tekstfelt {
-			margin-bottom: 10%;
+			padding-top: 40px;
+			margin-bottom: 0;
 		}
 		.en-container{
 			align-items: center;
-			margin-top: 10%;
-    		margin-bottom: 10%;
+			margin: 0 auto;
 		}
 		.service-box {
 			margin-top: 5%;
@@ -600,13 +620,13 @@
 			height: 320px;
 		}
 		.billede-split-sektion-2 {
-			width: 80%;
-			margin: auto;
+			width: 100%;
+			margin: 0;
 			height: 320px;
 		}
 		.tekstfelt-split-sektion {
 			width: 100%;
-			margin: auto;
+			margin: 0 auto 40px auto;
 			.tekstfelt-split-overskrift {
 				width: 80%;
 				margin: auto;
