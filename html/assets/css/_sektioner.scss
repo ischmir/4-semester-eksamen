@@ -38,6 +38,7 @@ $background-color_4: #ffffff;
 	flex: 50%;
 	color: $color_3;
 }
+
 .boks-1 {
 	flex: 50%;
 	color: $color_1;
@@ -102,8 +103,8 @@ $background-color_4: #ffffff;
 	color: $color_1;
 }
 .grid6-boks {
-	height: 80px;
 	flex: 33.33%;
+	opacity: 0.8;
 	color: $color_1;
 }
 .grid3-modul-boks {
@@ -128,12 +129,6 @@ $background-color_4: #ffffff;
 	padding-bottom: 20px;
 }
 
-$color_1: #B8B560;
-$color_2: #ffffff;
-$font-family_1: 'Poppins', sans-serif;
-$background-color_1: #ffffff;
-$background-color_2: #B8B560;
-
 .input-container {
 	position: relative;
 	margin: 1rem 0;
@@ -144,14 +139,15 @@ $background-color_2: #B8B560;
 	border: 2px solid #B8B560;
 	background: none;
 	padding: 0.6rem 1.2rem;
-	color: $color_1;
+	color: $color_6;
 	font-weight: 500;
 	font-size: 0.95rem;
 	letter-spacing: 0.5px;
 	border-radius: 25px;
 	transition: 0.3s;
+	font-family: $font-family_1;
 	&::placeholder {
-		color: $color_1;
+		color: $color_6;
 		font-family: $font-family_1;
 	}
 }
@@ -189,7 +185,9 @@ $background-color_2: #B8B560;
 	margin: 0;
 }
 
-
+.reference-tekst-box{
+	padding-top: 70px;
+}
 
 @include mx-sm {
 	.double-modul-boks{
@@ -275,6 +273,9 @@ $background-color_2: #B8B560;
     .dingle-modul-boks{
         gap: 100px;
     }
+	.reference-tekst-box{
+		padding-top: 0px;
+	}
 }
 
 
