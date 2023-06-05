@@ -232,7 +232,10 @@
 	background-color: $background-color_7;
 	.to-container {
 		width: 80%;
-		margin: 10% auto;
+		margin: auto;
+		h2 {
+			color: $color_1;
+		}
 	}
 }
 .to-sektion-1-2 {
@@ -242,9 +245,13 @@
 }
 .to-sektion-1 {
 	width: 500px;
+	margin: 40px 0;
+	color: $color_1;
 }
 .to-sektion-2 {
 	width: 500px;
+	margin: 40px 0;
+	color: $color_1;
 }
 .en-sektion {
 	height: fit-content;
@@ -388,12 +395,12 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			.to-sektion-1{
-				margin: 10% 0;
 				width: 100%;
+				padding: 0;
 				}
 			.to-sektion-2{
-				margin: 10% 0;
 				width: 100%;
+				padding: 0;
 			}
 		}
 		
@@ -532,12 +539,12 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			.to-sektion-1{
-				margin: 10% 0;
 				width: 100%;
+				padding: 0;
 				}
 			.to-sektion-2{
-				margin: 10% 0;
 				width: 100%;
+				padding: 0;
 			}
 		}
 	}
@@ -670,12 +677,12 @@
 			flex-direction: column;
 			justify-content:space-around;
 			.to-sektion-1{
-				margin: 10% 0;
 				width: 100%;
+				padding: 0;
 				}
 			.to-sektion-2{
-				margin: 10% 0;
 				width: 100%;
+				padding: 0;
 			}
 		}
 	}
@@ -806,12 +813,12 @@
 			flex-direction: row;
 			justify-content:space-around;
 			.to-sektion-1{
-				margin: 10% 0;
 				width: 100%;
+				padding: 0 10 0 0px;
 				}
 			.to-sektion-2{
-				margin: 10% 0;
 				width: 100%;
+				padding: 0 0 0 10px;
 			}
 		}
 	}
@@ -969,12 +976,12 @@
 			flex-direction: row;
 			justify-content:space-around;
 			.to-sektion-1{
-				margin: 10% 0;
 				width: 100%;
+				padding: 0 10 0 0px;
 				}
 			.to-sektion-2{
-				margin: 10% 0;
 				width: 100%;
+				padding: 0 0 0 10px;
 			}
 		}
 	}
