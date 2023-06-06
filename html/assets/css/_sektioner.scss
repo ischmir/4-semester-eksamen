@@ -31,22 +31,10 @@ $background-color_4: #ffffff;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-repeat: no-repeat;
-<<<<<<< Updated upstream
 	background-size: 100%;
 	color: white;
 }
 
-=======
-}
-
-.split-img-omos{
-	width: 100%;
-	background-size: 50%;
-	background-repeat: no-repeat;
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
->>>>>>> Stashed changes
 
 .sektion--2 {
 	width: 100%;
@@ -73,11 +61,7 @@ $background-color_4: #ffffff;
 }
 
 .boks-2-omos{
-<<<<<<< Updated upstream
 	padding-right: 50%;
-=======
-	padding-left: 60%;
->>>>>>> Stashed changes
 }
 
 .boks-1 {
@@ -90,6 +74,8 @@ $background-color_4: #ffffff;
 }
 .dingle-modul-boks {
 	display: flex;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	flex-direction: row;
 	gap: 280px;
 	max-width: 75%;
@@ -158,7 +144,7 @@ $background-color_4: #ffffff;
 }
 .grid3-boks {
 	flex: 33.33%;
-	color: $color_1;
+	color: $color_3;
 }
 .overskrift-grid-modul {
 	max-width: 75%;
@@ -394,22 +380,9 @@ $background-color_4: #ffffff;
 
 	}
 
-<<<<<<< Updated upstream
 	.boks-2-omos{
 		padding-right: 0%;
 	}
-=======
-	.split-img-omos{
-		width: 100%;
-		background-size: 100%;
-		background-repeat: no-repeat;
-	}
-
-	.boks-2-omos{
-		padding-left: 0%;
-	}
-
->>>>>>> Stashed changes
 
 }
 @include mx-xl {
@@ -423,11 +396,6 @@ $background-color_4: #ffffff;
 		padding-top: 0px;
 	}
 
-	.split-img-omos{
-		width: 100%;
-		background-size: 100%;
-		background-repeat: no-repeat;
-	}
 
 }
 
