@@ -1,6 +1,6 @@
 /*main*/
 $color_1: #ffffff;
-$color_2: #B8B560;
+$color_2: #9BA06C;
 $color_3: #5C533F;
 $background-color_1: rgb(255, 255, 255);
 $background-color_2: #9BA06C;
@@ -154,6 +154,9 @@ $background-color_4: #ffffff;
 	padding-bottom: 20px;
 }
 
+
+
+
 .contact-form{
 	.input-container {
 	position: relative;
@@ -161,10 +164,10 @@ $background-color_4: #ffffff;
 	.contact-form-input {
 		width: 100%;
 		outline: none;
-		border: 2px solid $color_6;
+		border: 2px solid $color_2;
 		background: none;
 		padding: 0.6rem 1.2rem;
-		color: $color_6;
+		color: $color_2;
 		font-weight: 500;
 		font-size: 0.95rem;
 		letter-spacing: 0.5px;
@@ -172,7 +175,7 @@ $background-color_4: #ffffff;
 		transition: 0.3s;
 		font-family: $font-family_1;
 		&::placeholder {
-			color: $color_6;
+			color: $color_2;
 			font-family: $font-family_1;
 		}
 	}
@@ -183,15 +186,15 @@ $background-color_4: #ffffff;
 		resize: none;
 		overflow-y: auto;
 		&::placeholder {
-			color: $color_6;
+			color: $color_2;
 			font-family: $font-family_1;
 		}
 	}
 	}
 	.form-submit-btn {
 		padding: 15px 30px 15px 30px;
-		background-color: $background-color_6;
-		border: 2px solid $color_6;
+		background-color: $background-color_2;
+		border: 2px solid $color_2;
 		font-size: 16px;
 		color: $color_1;
 		line-height: 1;
@@ -203,72 +206,9 @@ $background-color_4: #ffffff;
 		&:hover {
 			padding: 15px 30px 15px 30px;
 			background-color: transparent;
-			border: 2px solid $color_6;
+			border: 2px solid $color_2;
 			font-size: 16px;
-			color: $color_1;
-			line-height: 1;
-			border-radius: 50px;
-			outline: none;
-			cursor: pointer;
-			transition: 0.3s;
-			margin: 0;
-		}
-	}
-}
-
-
-.contact-form-2{
-	.input-container {
-	position: relative;
-	margin: 1rem 0;
-	.contact-form-input {
-		width: 100%;
-		outline: none;
-		border: 2px solid $color_1;
-		background: none;
-		padding: 0.6rem 1.2rem;
-		color: $color_1;
-		font-weight: 500;
-		font-size: 0.95rem;
-		letter-spacing: 0.5px;
-		border-radius: 25px;
-		transition: 0.3s;
-		font-family: $font-family_1;
-		&::placeholder {
-			color: $color_1;
-			font-family: $font-family_1;
-		}
-	}
-	.contact-form-textarea {
-		padding: 0.8rem 1.2rem;
-		min-height: 150px;
-		border-radius: 22px;
-		resize: none;
-		overflow-y: auto;
-		&::placeholder {
-			color: $color_1;
-			font-family: $font-family_1;
-		}
-	}
-	}
-	.form-submit-btn {
-		padding: 15px 30px 15px 30px;
-		background-color: $background-color_1;
-		border: 2px solid $color_1;
-		font-size: 16px;
-		color: $color_6;
-		line-height: 1;
-		border-radius: 50px;
-		outline: none;
-		cursor: pointer;
-		transition: 0.3s;
-		margin: 0;
-		&:hover {
-			padding: 15px 30px 15px 30px;
-			background-color: transparent;
-			border: 2px solid $color_1;
-			font-size: 16px;
-			color: $color_1;
+			color: $color_2;
 			line-height: 1;
 			border-radius: 50px;
 			outline: none;
