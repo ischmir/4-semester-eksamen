@@ -30,18 +30,10 @@ $background-color_4: #ffffff;
 	width: 100%;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background-image: url("/html/assets/img/baggrundsgrafik-1.png");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
 
-.split-image-omos{
-	position: absolute;
-	padding: 0%;
-	z-index: -10;
-	height: auto;
-	width: 50%;
-}
 
 .sektion--2 {
 	width: 100%;
@@ -61,6 +53,11 @@ $background-color_4: #ffffff;
 	color: $color_1;
 	flex: 50%;
 	color: $color_3;
+}
+
+.boks-2-omos{
+	padding-right: 50%;
+	color: $color_1;
 }
 
 .boks-1 {
@@ -155,54 +152,43 @@ $background-color_4: #ffffff;
 	padding-bottom: 20px;
 }
 
-.input-container {
+.contact-form{
+	.input-container {
 	position: relative;
 	margin: 1rem 0;
-}
-.contact-form-input {
-	width: 100%;
-	outline: none;
-	border: 2px solid $color_6;
-	background: none;
-	padding: 0.6rem 1.2rem;
-	color: $color_6;
-	font-weight: 500;
-	font-size: 0.95rem;
-	letter-spacing: 0.5px;
-	border-radius: 25px;
-	transition: 0.3s;
-	font-family: $font-family_1;
-	&::placeholder {
+	.contact-form-input {
+		width: 100%;
+		outline: none;
+		border: 2px solid $color_6;
+		background: none;
+		padding: 0.6rem 1.2rem;
 		color: $color_6;
+		font-weight: 500;
+		font-size: 0.95rem;
+		letter-spacing: 0.5px;
+		border-radius: 25px;
+		transition: 0.3s;
 		font-family: $font-family_1;
+		&::placeholder {
+			color: $color_6;
+			font-family: $font-family_1;
+		}
 	}
-}
-.contact-form-textarea {
-	padding: 0.8rem 1.2rem;
-	min-height: 150px;
-	border-radius: 22px;
-	resize: none;
-	overflow-y: auto;
-	&::placeholder {
-		color: $color_6;
-		font-family: $font-family_1;
+	.contact-form-textarea {
+		padding: 0.8rem 1.2rem;
+		min-height: 150px;
+		border-radius: 22px;
+		resize: none;
+		overflow-y: auto;
+		&::placeholder {
+			color: $color_6;
+			font-family: $font-family_1;
+		}
 	}
-}
-.form-submit-btn {
-	padding: 15px 30px 15px 30px;
-	background-color: $background-color_6;
-	border: 2px solid $color_6;
-	font-size: 16px;
-	color: $color_1;
-	line-height: 1;
-	border-radius: 50px;
-	outline: none;
-	cursor: pointer;
-	transition: 0.3s;
-	margin: 0;
-	&:hover {
+	}
+	.form-submit-btn {
 		padding: 15px 30px 15px 30px;
-		background-color: transparent;
+		background-color: $background-color_6;
 		border: 2px solid $color_6;
 		font-size: 16px;
 		color: $color_1;
@@ -212,8 +198,86 @@ $background-color_4: #ffffff;
 		cursor: pointer;
 		transition: 0.3s;
 		margin: 0;
+		&:hover {
+			padding: 15px 30px 15px 30px;
+			background-color: transparent;
+			border: 2px solid $color_6;
+			font-size: 16px;
+			color: $color_1;
+			line-height: 1;
+			border-radius: 50px;
+			outline: none;
+			cursor: pointer;
+			transition: 0.3s;
+			margin: 0;
+		}
 	}
 }
+
+
+.contact-form-2{
+	.input-container {
+	position: relative;
+	margin: 1rem 0;
+	.contact-form-input {
+		width: 100%;
+		outline: none;
+		border: 2px solid $color_1;
+		background: none;
+		padding: 0.6rem 1.2rem;
+		color: $color_1;
+		font-weight: 500;
+		font-size: 0.95rem;
+		letter-spacing: 0.5px;
+		border-radius: 25px;
+		transition: 0.3s;
+		font-family: $font-family_1;
+		&::placeholder {
+			color: $color_1;
+			font-family: $font-family_1;
+		}
+	}
+	.contact-form-textarea {
+		padding: 0.8rem 1.2rem;
+		min-height: 150px;
+		border-radius: 22px;
+		resize: none;
+		overflow-y: auto;
+		&::placeholder {
+			color: $color_1;
+			font-family: $font-family_1;
+		}
+	}
+	}
+	.form-submit-btn {
+		padding: 15px 30px 15px 30px;
+		background-color: $background-color_1;
+		border: 2px solid $color_1;
+		font-size: 16px;
+		color: $color_6;
+		line-height: 1;
+		border-radius: 50px;
+		outline: none;
+		cursor: pointer;
+		transition: 0.3s;
+		margin: 0;
+		&:hover {
+			padding: 15px 30px 15px 30px;
+			background-color: transparent;
+			border: 2px solid $color_1;
+			font-size: 16px;
+			color: $color_1;
+			line-height: 1;
+			border-radius: 50px;
+			outline: none;
+			cursor: pointer;
+			transition: 0.3s;
+			margin: 0;
+		}
+	}
+}
+
+
 
 .reference-tekst-box{
 	padding-top: 70px;
@@ -286,11 +350,6 @@ $background-color_4: #ffffff;
 
 	}
 
-	.sektion--1 {
-		background-size: 150% auto;
-		background-repeat: repeat;
-	}
-
 
 }
 @include mx-lg {
@@ -319,6 +378,10 @@ $background-color_4: #ffffff;
 		padding: 140px 0 60px 0;
 		background-size: 290% auto;
 
+	}
+
+	.boks-2-omos{
+		padding-right: 0%;
 	}
 
 
