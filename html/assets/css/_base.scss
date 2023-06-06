@@ -20,6 +20,8 @@
 .banner-sektion-forside {
 	background-image: url(/html/assets/img/banner-4.png);
 	background-size:cover;
+	background-position: 0 80px;
+	background-repeat: no-repeat;
 	min-height: 500px;
 	padding: 40px 0;
 	.en-container {
@@ -230,16 +232,22 @@
 }
 .billede-sektion-7 {
 	min-height: 500px;
-	background-color: $background-color_1;
+	background-image: url(/html/assets/img/baggrundsgrafik-2.png);
 	background-size: cover;
+	background-position: 0 -250px;
+	background-repeat: no-repeat;
 	display: flex;
 	align-items: center;
-	margin: 40px 0;
+	padding: 40px 0;
 }
 .tre-sektion {
+	background-image: url(/html/assets/img/baggrundsgrafik-1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 	.tre-container {
 		width: 80%;
-		margin: 10% auto;
+		padding: 40px 0;
+		margin: 0 auto;
 	}
 }
 .tre-sektion-1-2-3 {
@@ -275,9 +283,12 @@
 }
 .en-sektion {
 	height: fit-content;
+	background-image: url(/html/assets/img/baggrundsgrafik-1.png);
+	background-size: cover;
 	.en-container {
 		.h2-tekstfelt {
-			margin: 10% auto;
+			padding: 10% 0;
+			margin: 0 auto;
 		}
 	}
 }
