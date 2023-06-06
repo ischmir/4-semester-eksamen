@@ -47,8 +47,15 @@
 	min-height: 500px;
 	padding: 40px 0;
 	.en-container {
-		.h1-tekstfelt {
+		.h1-tekstfelt {	
 			width: 50%;
+			.hvid-tekstboks {
+				background-color: $background-color_12;
+				padding: 15px 30px 15px 30px;
+				box-shadow: 0px 10px 15px $color_3;
+				border-radius: 50px;
+				color: $color_5;
+			}
 		}
 	}
 }
