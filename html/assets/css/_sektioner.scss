@@ -40,6 +40,8 @@ $background-color_4: #ffffff;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: $background-color_2;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
 }
 .single-modul-boks {
 	max-width: 75%;
@@ -348,6 +350,16 @@ $background-color_4: #ffffff;
 		padding: 140px 0 60px 0;
 		background-size: 290% auto;
 
+	}
+
+	.sektion--1 {
+		background-repeat: repeat;
+		background-size: 150% auto;
+	}
+
+	.sektion--2 {
+		background-repeat: repeat;
+		background-size: 150% auto;
 	}
 
 
