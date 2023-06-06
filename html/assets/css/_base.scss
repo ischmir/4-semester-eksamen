@@ -49,15 +49,15 @@
 	.en-container {
 		.h1-tekstfelt {	
 			width: 50%;
-			.hvid-tekstboks {
-				background-color: $background-color_12;
-				padding: 15px 10px;
-				box-shadow: 0px 10px 15px $color_3;
-				border-radius: 50px;
-				color: $color_5;
-			}
 		}
 	}
+}
+.hvid-tekstboks {
+	background-color: $background-color_12;
+	padding: 15px 10px;
+	box-shadow: 0px 10px 15px $color_3;
+	border-radius: 50px;
+	color: $color_5;
 }
 .en-container {
 	width: 100%;
