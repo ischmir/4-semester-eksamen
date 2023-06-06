@@ -18,7 +18,7 @@
 	
 }
 .banner-sektion-forside {
-	background-image: url(/html/assets/img/banner-4.png);
+	background-image: url(../img/banner-4.png);
 	background-size:cover;
 	background-position: 0 80px;
 	background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 	}
 }
 .banner-sektion-webudvikling {
-	background-image: url(/html/assets/img/banner-3.png);
+	background-image: url(../img/banner-3.png);
 	background-size: cover;
 	min-height: 500px;
 	padding: 40px 0;
@@ -44,7 +44,7 @@
 	}
 }
 .banner-sektion-marketing {
-	background-image: url(/html/assets/img/banner-2.png);
+	background-image: url(../img/banner-2.png);
 	background-size: cover;
 	min-height: 500px;
 	padding: 40px 0;
@@ -100,13 +100,13 @@
 	color: $color_5;
 	.billede-split-sektion-1 {
 		width: 50%;
-		background-image: url(/html/assets/img/split-billede-3.png);
+		background-image: url(../img/split-billede-3.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	.billede-split-sektion-2 {
 		width: 50%;
-		background-image: url(/html/assets/img/split-billede-4.png);
+		background-image: url(../img/split-billede-4.png);
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
@@ -131,7 +131,7 @@
 	margin-top: 40px;
 	padding: 10% auto;
 	height: fit-content;
-	background-image: url(/html/assets/img/baggrundsgrafik-1.png);
+	background-image: url(../img/baggrundsgrafik-1.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -204,7 +204,7 @@
 }
 .billede-sektion-1 {
 	min-height: 500px;
-	background-image: url(/html/assets/img/banner-1.png);
+	background-image: url(../img/banner-1.png);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -212,7 +212,7 @@
 }
 .billede-sektion-2 {
 	min-height: 500px;
-	background-image: url(/html/assets/img/banner-2.png);
+	background-image: url(../img/banner-2.png);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -220,7 +220,7 @@
 }
 .billede-sektion-3 {
 	min-height: 500px;
-	background-image: url(/html/assets/img/banner-3.png);
+	background-image: url(../img/banner-3.png);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -228,7 +228,7 @@
 }
 .billede-sektion-4 {
 	min-height: 500px;
-	background-image: url(/html/assets/img/banner-4.png);
+	background-image: url(../img/banner-4.png);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -236,7 +236,7 @@
 }
 .billede-sektion-5 {
 	min-height: 500px;
-	background-image: url(/html/assets/img/banner-5.png);
+	background-image: url(../img/banner-5.png);
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -252,7 +252,7 @@
 }
 .billede-sektion-7 {
 	min-height: 500px;
-	background-image: url(/html/assets/img/baggrundsgrafik-2.png);
+	background-image: url(../img/baggrundsgrafik-2.png);
 	background-size: cover;
 	background-position: 0 -250px;
 	background-repeat: no-repeat;
@@ -262,7 +262,7 @@
 	color: $color_5;
 }
 .tre-sektion {
-	background-image: url(/html/assets/img/baggrundsgrafik-1.png);
+	background-image: url(../img/baggrundsgrafik-1.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	.tre-container {
@@ -305,7 +305,7 @@
 }
 .en-sektion {
 	height: fit-content;
-	background-image: url(/html/assets/img/baggrundsgrafik-1.png);
+	background-image: url(../img/baggrundsgrafik-1.png);
 	background-size: cover;
 	.en-container {
 		.h2-tekstfelt {
