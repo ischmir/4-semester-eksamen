@@ -9,9 +9,22 @@ $background-color_4: #ffffff;
 
 .sektion--start {
 	width: 100%;
-	padding-top: 120px;
-	padding-bottom: 60px;
-	background-color: $background-color_1;
+	margin-top: 80px;
+	color: #ffffff;
+	padding: 60px 0 180px 0;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: $background-color_2;
+}
+
+.sektion--start-kontakt{
+	width: 100%;
+	color: #ffffff;
+	padding: 140px 0 60px 0;
+	background-size: 130% auto;
+	background-repeat: no-repeat;
+	background-color: $background-color_2;
+
 }
 .sektion--1 {
 	width: 100%;
@@ -21,6 +34,15 @@ $background-color_4: #ffffff;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 }
+
+.split-image-omos{
+	position: absolute;
+	padding: 0%;
+	z-index: -10;
+	height: auto;
+	width: 50%;
+}
+
 .sektion--2 {
 	width: 100%;
 	padding-top: 60px;
@@ -51,6 +73,8 @@ $background-color_4: #ffffff;
 }
 .dingle-modul-boks {
 	display: flex;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	flex-direction: row;
 	gap: 280px;
 	max-width: 75%;
@@ -65,7 +89,7 @@ $background-color_4: #ffffff;
 .btn-all {
 	padding: 15px 30px 15px 30px;
 	background-color: $background-color_3;
-	border: 2px solid #B8B560;
+	border: 2px solid $color_6;
 	font-size: 16px;
 	color: $color_1;
 	line-height: 1;
@@ -77,7 +101,7 @@ $background-color_4: #ffffff;
 	&:hover {
 		padding: 15px 30px 15px 30px;
 		background-color: transparent;
-		border: 2px solid #B8B560;
+		border: 2px solid $color_6;
 		font-size: 16px;
 		color: $color_2;
 		line-height: 1;
@@ -138,7 +162,7 @@ $background-color_4: #ffffff;
 .contact-form-input {
 	width: 100%;
 	outline: none;
-	border: 2px solid #B8B560;
+	border: 2px solid $color_6;
 	background: none;
 	padding: 0.6rem 1.2rem;
 	color: $color_6;
@@ -159,12 +183,27 @@ $background-color_4: #ffffff;
 	border-radius: 22px;
 	resize: none;
 	overflow-y: auto;
+	&::placeholder {
+		color: $color_6;
+		font-family: $font-family_1;
+	}
 }
 .form-submit-btn {
+	padding: 15px 30px 15px 30px;
+	background-color: $background-color_6;
+	border: 2px solid $color_6;
+	font-size: 16px;
+	color: $color_1;
+	line-height: 1;
+	border-radius: 50px;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+	margin: 0;
 	&:hover {
 		padding: 15px 30px 15px 30px;
-		background-color: $background-color_1;
-		border: 2px solid #B8B560;
+		background-color: transparent;
+		border: 2px solid $color_6;
 		font-size: 16px;
 		color: $color_1;
 		line-height: 1;
@@ -174,17 +213,6 @@ $background-color_4: #ffffff;
 		transition: 0.3s;
 		margin: 0;
 	}
-	padding: 15px 30px 15px 30px;
-	background-color: $background-color_2;
-	border: 2px solid #B8B560;
-	font-size: 16px;
-	color: $color_2;
-	line-height: 1;
-	border-radius: 50px;
-	outline: none;
-	cursor: pointer;
-	transition: 0.3s;
-	margin: 0;
 }
 
 .reference-tekst-box{
@@ -207,7 +235,6 @@ $background-color_4: #ffffff;
         max-width: 90%;
     }
     .grid6-modul-boks{
-        flex-direction: column;
         max-width: 90%;
     }
     .grid3-modul-boks{
@@ -218,6 +245,9 @@ $background-color_4: #ffffff;
     .overskrift-grid-modul{
       max-width: 90%;
     }
+
+	
+
 }
 @include mx-md {
 	.double-modul-boks{
@@ -235,7 +265,6 @@ $background-color_4: #ffffff;
         max-width: 80%;
     }
     .grid6-modul-boks{
-        flex-direction: column;
         max-width: 80%;
     }
     .grid3-modul-boks{
@@ -245,6 +274,24 @@ $background-color_4: #ffffff;
     .overskrift-grid-modul{
       max-width: 80%;
     }
+
+	.sektion--start {
+		padding: 60px 0 0 0;
+		background-size: 200% auto;
+	}
+
+	.sektion--start-kontakt {
+		padding: 140px 0 60px 0;
+		background-size: 290% auto;
+
+	}
+
+	.sektion--1 {
+		background-size: 150% auto;
+		background-repeat: repeat;
+	}
+
+
 }
 @include mx-lg {
 	.double-modul-boks{
@@ -267,6 +314,14 @@ $background-color_4: #ffffff;
 	.overskrift-grid-modul{
 	  max-width: 80%;
 	}
+
+	.sektion--start-kontakt {
+		padding: 140px 0 60px 0;
+		background-size: 290% auto;
+
+	}
+
+
 }
 @include mx-xl {
 	.double-modul-boks{
@@ -278,6 +333,8 @@ $background-color_4: #ffffff;
 	.reference-tekst-box{
 		padding-top: 0px;
 	}
+
+
 }
 
 
