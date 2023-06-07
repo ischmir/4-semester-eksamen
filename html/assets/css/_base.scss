@@ -318,7 +318,13 @@
 .kontakt-formular-sektion {
 	padding: 5% 0;
 	background-color: $background-color_7;
-
+	.double-modul-boks {
+		.boks-1 {
+			.boks-1-div-1 {
+				 color: $color_1;
+			}
+		}
+	}
 }
 /*Lille Mobilenhed - 320px*/
 @include mn-xs {	
